@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1167" data-name="Rectangle 1167" width="24" height="24" transform="translate(1507 423)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="moment-icon" transform="translate(-1507 -423)" clip-path="url(#clip-path)">
+    <g id="hourglass" transform="translate(1450.311 425)">
+      <g id="Group_439" data-name="Group 439" transform="translate(61.339 0.446)">
+        <path id="Path_250" data-name="Path 250" d="M71.389,7.643a8.276,8.276,0,0,0,3.167-6.513H75.7V0H61V1.131h1.142A8.276,8.276,0,0,0,65.31,7.643c.858.782,1.344,1.261,1.344,2s-.486,1.222-1.344,2a8.276,8.276,0,0,0-3.167,6.513H61V19.3H75.7V18.166H74.556a8.276,8.276,0,0,0-3.167-6.513c-.858-.782-1.344-1.261-1.344-2S70.531,8.426,71.389,7.643Zm-3.605,6.243a2.859,2.859,0,0,0-.515.158l-3.463,1.433a7.714,7.714,0,0,1,2.266-2.988c.881-.8,1.713-1.562,1.713-2.84Zm2.843-1.4a7.714,7.714,0,0,1,2.266,2.988L69.43,14.044a2.859,2.859,0,0,0-.515-.158V9.648C68.915,10.927,69.747,11.686,70.627,12.489Zm-6.841-8.72a8.377,8.377,0,0,1-.512-2.638h10.15a8.376,8.376,0,0,1-.512,2.638Z" transform="translate(-61)" fill="#222"/>
+      </g>
+    </g>
+  </g>
+</svg>

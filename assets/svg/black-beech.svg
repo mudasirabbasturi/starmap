@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="65" viewBox="0 0 65 65">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="milky-way-constellation-stars-shape" cx="32.5" cy="32.5" r="32.5" transform="translate(1541 1176)" fill="#fff" stroke="#dadada" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1160" data-name="Rectangle 1160" width="61.104" height="61.878" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <filter id="Path_224" x="-296.995" y="14.093" width="349.599" height="19.188" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.412"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_231" x="33.828" y="14.981" width="15.823" height="474.566" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.8"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Black_Beech_" data-name="Black(Beech)" transform="translate(-1541 -1176)" clip-path="url(#clip-path)">
+    <g id="Group_415" data-name="Group 415" transform="translate(1626.295 1159.935)">
+      <g id="Group_414" data-name="Group 414" transform="translate(-96.493 31.158)" clip-path="url(#clip-path-2)">
+        <rect id="background" width="61.104" height="61.878" fill="#f0f0f0"/>
+        <g id="Group_413" data-name="Group 413" transform="translate(-282.851)">
+          <g transform="matrix(1, 0, 0, 1, 294.05, -15.09)" filter="url(#Path_224)">
+            <path id="Path_224-2" data-name="Path 224" d="M213.813,44.347l12.282-13.188H-117.5l12.284,13.188Z" transform="translate(-176.49 -16.06)" fill="#373737"/>
+          </g>
+          <path id="Path_225" data-name="Path 225" d="M-107.159,41.937l-9.826-10.548H220.682l-9.823,10.548Z" transform="translate(120.004 -30.071)" fill="#292929"/>
+          <path id="Path_226" data-name="Path 226" d="M-105.232,44.347h.055l-12.284-13.188h-.053v474.4l12.282-13.185Z" transform="translate(117.514 -31.158)" fill="#231f20"/>
+          <path id="Path_227" data-name="Path 227" d="M-117.3,31.706l9.829,10.548v447L-117.3,499.8Z" transform="translate(118.525 -28.578)" fill="#292929"/>
+          <path id="Path_228" data-name="Path 228" d="M214.13,112.242H-105.232v-.3l-12.282,13.185v.3H226.417v-.055L214.13,112.186Z" transform="translate(117.514 349.267)" fill="#373737"/>
+          <path id="Path_229" data-name="Path 229" d="M-117.043,122.782l9.826-10.554H211.459l9.829,10.554Z" transform="translate(119.733 350.596)" fill="#292929"/>
+          <path id="Path_230" data-name="Path 230" d="M-47.188,31.158-59.47,44.347h.273V492.611L-46.91,505.8V31.158Z" transform="translate(390.84 -31.158)" fill="#231f20"/>
+          <g transform="matrix(1, 0, 0, 1, 294.05, -15.09)" filter="url(#Path_231)">
+            <path id="Path_231-2" data-name="Path 231" d="M-59.206,489.682V42.212l9.823-10.548V500.231Z" transform="translate(98.03 -13.68)" fill="#292929"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

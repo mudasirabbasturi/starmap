@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1171" data-name="Rectangle 1171" width="24" height="24" transform="translate(1507 423)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="product-icon" transform="translate(-1507 -423)" clip-path="url(#clip-path)">
+    <g id="easel" transform="translate(1494.768 425.5)">
+      <path id="Path_251" data-name="Path 251" d="M45,331.154h3.6l-2.938,4.9.989.594,3.294-5.49H52.5v5.77h1.154v-5.77h2.558l3.294,5.49.989-.594-2.938-4.9h3.6V330H45Z" transform="translate(-28.846 -317.306)" fill="#222"/>
+      <path id="Path_252" data-name="Path 252" d="M15,0V10.724l6.347-6.347L24.04,7.07l4.353-3.246,5.07,6.951V0Zm4.039,4.039H17.885V2.308h1.154Z" transform="translate(0)" fill="#222"/>
+      <path id="Path_253" data-name="Path 253" d="M41.744,156.213l-5.531,5.531H47.275Z" transform="translate(-20.397 -150.204)" fill="#222"/>
+      <path id="Path_254" data-name="Path 254" d="M271.461,144.036l3.645,3.645h4.084l-4.445-6.093Z" transform="translate(-246.596 -136.141)" fill="#222"/>
+    </g>
+  </g>
+</svg>
