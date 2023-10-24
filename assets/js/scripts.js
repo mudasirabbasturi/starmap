@@ -515,7 +515,7 @@ starDensitySizeEle.addEventListener('input', function(e) {
 
 function convertToImgDownload() {
     document.getElementById('loader').style.visibility = "visible";
-    const dpi = 1000;
+    const dpi = 3000;
     const scale = dpi / 96;
     setTimeout(function() {
       html2canvas(frameEle, {

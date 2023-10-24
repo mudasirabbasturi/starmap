@@ -575,7 +575,7 @@ body {
 .frame {
     position: relative;
     background-color: var(--frame_color, #061b28);
-    /* background: rgb(102, 6, 228);
+/*     background: rgb(102, 6, 228);
     background: linear-gradient(0deg, rgb(214, 3, 3) 0%, rgb(209, 209, 0) 100%); */
 }
 
