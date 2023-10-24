@@ -39,11 +39,14 @@ window.addEventListener('load', function () {
 if (frameEle.classList.contains('vertical')) {
     // frameEle.style.height = "90%";
     // frameEle.style.width = frameEle.offsetHeight / 1.33333333333 + "px";
-    var originalWidth = 1133.8582677;
-    var originalHeight = 1511.8110236;
+    
+    // var originalWidth = 1133.8582677;
+    // var originalHeight = 1511.8110236;
+    var originalWidth = 793.7007874;
+    var originalHeight = 1133.8582677;
 
     var aspectRatio = originalWidth / originalHeight;
-    frameEle.style.height = "100%";
+    frameEle.style.height = "90%";
     frameEle.style.width = (frameEle.offsetHeight * aspectRatio) + "px";
 }
 
