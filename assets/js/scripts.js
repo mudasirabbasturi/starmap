@@ -523,11 +523,7 @@ starDensitySizeEle.addEventListener('input', function(e) {
 
 function convertToImgDownload() {
     document.getElementById('loader').style.visibility = "visible";
-<<<<<<< HEAD
     const dpi = 1500;
-=======
-    const dpi = 1000;
->>>>>>> d2854cfc15fec4106ca26cac2cfcd614f9bacd71
     const scale = dpi / 96;
     setTimeout(function() {
       html2canvas(frameEle, {
