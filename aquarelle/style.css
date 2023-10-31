@@ -1,0 +1,42 @@
+.frame {
+    position: relative;
+    background-color: var(--frame_color, #ffffff);
+}
+
+.frame_inner {
+    border: 1px solid #020202;
+}
+
+#map canvas {
+    width: 92%;
+}
+
+.aquarelle {
+    position: absolutergb(39, 39, 39);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.aquarelle img {
+    width: 100%;
+}
+
+.frame_message_name {
+    color: var(--frame_message_name_color, #030303);
+  }
+  
+  .frame_date_time {
+    color: var(--frame_date_color, #000000);
+  }
+  
+  .frame_address {
+    color: var(--frame_address_color, #000000);
+  }
+  
+  .frame_coordinate {
+    color: var(--frame_coordinate_color, #000000);
+  }

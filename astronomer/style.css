@@ -1,0 +1,31 @@
+.frame {
+    position: relative;
+    background-color: var(--frame_color, #000000);
+}
+.frame_map {position: relative;}
+#map canvas {
+    width: 82%;
+}
+
+.astronomer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+}
+
+.astronomer img {
+    width: 100%;
+}
+
+.frame_map {
+    top: var(--y-position_map, 20%);
+}
+
+.frame_message_name {
+    top: var(--y-position_message, 12%);
+}
+  

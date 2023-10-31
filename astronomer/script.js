@@ -409,9 +409,9 @@ frameMapEle.style.height = frameMapEle.offsetWidth + 'px';
     },
     background: {
         fill: "#ffffff00",
-        stroke: "#ffff",
+        stroke: "#ffffff00",
         opacity: 1,
-        width: 3
+        width: 0
     }
 }
 Celestial.display(config)
