@@ -634,6 +634,7 @@ canvas {
   font-size: 18px;
   font-size: var(--frame_message_name_font_size, 22px);
   line-height: 1;
+  z-index: 1010;
 }
 
 .frame_date_time {
@@ -643,6 +644,7 @@ canvas {
   color: var(--frame_date_color, #d3d0d0);
   font-family: 'Times New Roman', serif;
   font-size: var(--frame_date_time_font_size, 12px);
+  z-index: 1015;
 }
 
 .frame_address {
@@ -652,6 +654,7 @@ canvas {
   color: var(--frame_address_color, #d2dbd9);
   font-size: var(--frame_address_font_size, 12px);
   font-family: 'Times New Roman', serif;
+  z-index: 1020;
 }
 
 .frame_coordinate {
@@ -661,6 +664,7 @@ canvas {
   color: var(--frame_coordinate_color, #b4bdb3);
   font-size: var(--frame_coordinate_font_size, 12px);
   font-family: 'Times New Roman', serif;
+  z-index: 1025;
 }
 
 .fixed_button_wrapper {

@@ -1,0 +1,28 @@
+ .color_wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+ .color_select {
+    flex-basis: 100px;
+    position: relative;
+    flex-grow: 1;
+    margin: 1px 1px 3px 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.color_select .color {
+    border: 1px solid #ddd;
+    font-size: 11px;
+    font-family: Tahoma, Verdana, sans-serif;
+    font-variant: small-caps;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding: 10px 2px;
+}
+
+ .color_select.larger {
+    flex-basis: 150px;
+}

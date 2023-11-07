@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Map Editor.</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/github.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/dist/jquery.fontpicker.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
+    <link  href="vanilla-picker.csp.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-loader">
+        <div class="spinner"></div>
+        <div class="txt">Loading...</div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4 border sidebar">
+                <ul class="nav nav-tabs pb-3 pt-2 mb-2 top_bar" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#product_tab_pan">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#moment_tab_pan">Moment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#text_tab_pan">Text</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#map_tab_pan">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#style_tab_pan">Advance Style</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="product_tab_pan" class="tab-pane fade">
+                        <h6 class="heading">Print Style.</h6>
+                        <div class="mb-3 mt-3 print">
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/classic.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Classic Circle</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/download.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Alaska Style</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/romantic.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Heart Style.</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/newmap.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Classic Circle</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/aquarelles.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Classic Circle</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/astronomer.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Classic Circle</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/modern.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Classic Circle</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/download.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Alaska Style</label>
+                            </div>
+                            <div class="print_style_select active">
+                                <div class="select_image">
+                                    <img src="../assets/imgs/classic.png" alt="" class="img-fluid">
+                                </div>
+                                <label for="">Classic Circle</label>
+                            </div>
+                        </div>
+                        <h6 class="heading">Print Layout.</h6><br>
+                        <h6 class="heading">Print Size.</h6>
+
+                    </div>
+                    <div id="moment_tab_pan" class="tab-pane fade">
+                        <h6 class="heading">Your Moment.</h6>
+                        <div class="mb-3 mt-3 moment">
+                            <input type="text" class="form-control" id="moment_location" value="London, United Kingdom"
+                                placeholder="London, United Kingdom">
+                            <label for="moment_location">
+                                Search The Place Of Your Moment.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 moment">
+                            <input type="date" class="form-control" id="moment_date" placeholder="" value="">
+                            <label for="moment_date">
+                              Select The Date Of Your Moment.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 moment">
+                            <input type="time" class="form-control" id="moment_time" placeholder="" value="">
+                            <label for="moment_time">
+                              Time (Optional) Default Midnight.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 moment">
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="number" class="form-control" id="moment_coordinates_ns" placeholder="" value="36.481205">
+                                </div>
+                                <div class="col-3">
+                                    <select class="form-select" id="n_s">
+                                        <option>N</option>
+                                        <option>S</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label for="coordinates_ns">
+                                Coordinates And Cardinal North | South.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 moment">
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="number" class="form-control" id="moment_coordinates_ew" placeholder="" value="36.481205">
+                                </div>
+                                <div class="col-3">
+                                    <select class="form-select" id="e_w">
+                                        <option>E</option>
+                                        <option>W</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label for="coordinates_ew">
+                                Coordinates And Cardinal East | West.
+                            </label>
+                        </div>
+                        <p class="note">
+                            Note: Changes to the coordinates and cardinals will change the location and the visible night sky.
+                        </p>
+                    </div>
+                    <div id="text_tab_pan" class="tab-pane fade">
+                        <h6 class="heading">Custom Text.</h6>
+                        <div class="mb-3 mt-3 text">
+                            <textarea class="form-control" id="text_message">Mudasir Abbas Turi From Lahore.</textarea>
+                            <label for="text_message">
+                              Your Name Or Message.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 text">
+                            <input type="text" class="form-control" id="text_date" value="20th September 2021"
+                            placeholder="20th September 2021">
+                            <label for="text_date">
+                                Stars Position Is Not Effected By Changing Date Here.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 text">
+                            <input type="text" class="form-control" id="text_location" value="Canotek Rd, Ottawa, ON K1J, Canada"
+                                placeholder="Canotek Rd, Ottawa, ON K1J, Canada">
+                            <label for="text_location">
+                                Stars Position Is Not Effected By Changing Location Text Here.
+                            </label>
+                        </div>
+                        <div class="mb-3 mt-3 text">
+                            <input type="text" class="form-control" id="text_coordinates" value="36.4812° N, 36.8666° E"
+                                placeholder="36.4812° N, 36.8666° E">
+                            <label for="text_coordinates">
+                                Stars Position Is Not Effected By Changing Coordinates Text Here.
+                            </label>
+                        </div>
+                    </div>
+                    <div id="map_tab_pan" class="tab-pane active">
+                        <h6 class="heading">Show Or Hide, Map Componenet.</h6>
+                        <div class="show_hide_wrapper mb-3 mt-3">
+                            <div class="show_hide_selector constellations_line">
+                                <img src="../assets/svg/constellations.svg" alt="">
+                                <span>Constellations.</span>
+                            </div>
+                            <div class="show_hide_selector graticule">
+                                <img src="../assets/svg/graticule.svg" alt="">
+                                <span>Graticule.</span>
+                            </div>
+                            <div class="show_hide_selector milky_way">
+                                <img src="../assets/svg/milky-way.svg" alt="">
+                                <span>Milky Way.</span>
+                            </div>
+                            <div class="show_hide_selector moon">
+                                <img src="../assets/svg/moon.svg" alt="">
+                                <span>Moon.</span>
+                            </div>
+                            <div class="show_hide_selector constellation_name">
+                                <img src="../assets/svg/constellations-name.svg" alt="">
+                                <span>Conste.. Name.</span>
+                            </div>
+                            <div class="show_hide_selector planet_and_sun">
+                                <img src="../assets/svg/planet-position.svg" alt="">
+                                <span>Planet Position.</span>
+                            </div>
+                            <div class="show_hide_selector equatorial">
+                                <img src="../assets/imgs/equatorial.png" alt="">
+                                <span>equatorial.</span>
+                            </div>
+                            <div class="show_hide_selector ecliptic">
+                                <img src="../assets/imgs/ecliptic.png" alt="">
+                                <span>ecliptic.</span>
+                            </div>
+                            <div class="show_hide_selector galactic">
+                                <img src="../assets/imgs/galactic.png" alt="">
+                                <span>galactic.</span>
+                            </div>
+                            <div class="show_hide_selector supergalactic">
+                                <img src="../assets/imgs/supergalactic.png" alt="">
+                                <span>supergalactic.</span>
+                            </div>
+                        </div>
+                        <h6 class="heading">Star Sizes.</h6>
+                        <div class="star_wrapper mb-3 mt-3">
+                            <div class="star_size_density_selector">
+                                <label for="star_size">Stars Size.</label>
+                                <div class="size_range_selector mt-1 mb-1">
+                                    <input type="range" 
+                                           name="star_size_number" class="star_track" id="star_track" step="0.1" min="1"
+                                           max="50" value="6">
+                                    <input type="number" 
+                                           name="star_size_number" class="star_number" id="star_size" step="0.1" min="0"
+                                           max="50" value="6">
+                                </div>
+                            </div>
+                            <div class="star_size_density_selector">
+                                <label for="star_size">Stars Limits.</label>
+                                <div class="size_range_selector mt-1 mb-1">
+                                    <input type="range" 
+                                           name="star_density" class="star_track" id="star_density_track" step="0.1" min="1"
+                                           max="6" value="6">
+                                    <input type="number" 
+                                           name="star_density" class="star_number" id="star_density_size" step="0.1" min="0"
+                                           max="6" value="6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="style_tab_pan" class="tab-pane fade">
+                        <h6 class="heading">Color Selector.</h6>
+                        <div class="color_wrapper mb-3 mt-3">
+                            <div class="color_select">
+                                <input type="color" 
+                                       name="frame_color" 
+                                       class="color form-control" 
+                                       id="frame_color"
+                                       value="#061b28">
+                                <label for="frame_color">Frame Color.</label>
+                            </div>
+                            <div class="color_select">
+                                <input type="color"  name="frame_map_color" 
+                                       class="color form-control"  
+                                       id="frame_map_color"
+                                       value="#00000000">
+                                <label for="frame_map_color">Map Color.</label>
+                            </div>
+                            <div class="color_select">
+                                <input type="color" 
+                                       name="frame_message_name_color" 
+                                       class="color form-control shadow-sm" 
+                                       id="frame_message_color"
+                                       value="#ffffff">
+                                <label for="frame_message_color">Message Color.</label>
+                            </div>
+                            <div class="color_select">
+                                <input type="color" 
+                                       name="frame_date_color" 
+                                       class="color form-control shadow-sm" 
+                                       id="frame_date_color"
+                                       value="#FFFFFF">
+                                <label for="frame_date_color">Date Color.</label>
+                            </div>
+                            <div class="color_select">
+                                <input type="color" 
+                                       name="frame_address_color" 
+                                       class="color form-control shadow-sm" 
+                                       id="frame_address_color"
+                                       value="#ffffff">
+                                <label for="frame_address_color">Address Color.</label>
+                            </div>
+                            <div class="color_select">
+                                <input type="color" 
+                                       name="frame_coordinate_color" 
+                                       class="color form-control shadow-sm" 
+                                       id="frame_coordinate_color"
+                                       value="#ffffff">
+                                <label for="frame_coordinate_color">Coordinates Color.</label>
+                            </div>
+                        </div>
+                        <h6 class="heading">Element Position.</h6>
+                        <div class="range_number_wrapper mb-3 mt-3">
+                            <div class="range_number_select">
+                                <label for="">Map Position Y-Axis.</label>
+                                <input type="range" 
+                                       name="y-position_map" class="track" id="" step="0.1" min="0"
+                                    max="100" value="20">
+                                <input type="number" name="y-position_map" class="percent" id="" step="0.1" min="0"
+                                    max="100" value="20">
+                            </div>
+                            <div class="range_number_select">
+                                <label for="">Message Position Y-Axis.</label>
+                                <input type="range" name="y-position_message" class="track" id="" step="0.1" min="0"
+                                    max="100" value="12">
+                                <input type="number" name="y-position_message" class="percent" id="" step="0.1" min="0"
+                                    max="100" value="12">
+                            </div>
+                            <div class="range_number_select">
+                                <label for="">Date Position Y-Axis.</label>
+                                <input type="range" name="y-position_date" class="track" id="" step="0.1" min="0"
+                                    max="100" value="81.8">
+                                <input type="number" name="y-position_date" class="percent" id="" step="0.1" min="0"
+                                    max="100" value="81.8">
+                            </div>
+                            <div class="range_number_select">
+                                <label for="">Address Position Y-Axis.</label>
+                                <input type="range" name="y-position_address" class="track" id="" step="0.1" min="0"
+                                    max="100" value="84.9">
+                                <input type="number" name="y-position_address" class="percent" id="" step="0.1" min="0"
+                                    max="100" value="84.9">
+                            </div>
+                            <div class="range_number_select">
+                                <label for="">Coordinates Position Y-Axis.</label>
+                                <input type="range" name="y-position_coordinates" class="track" id="" step="0.1" min="0"
+                                    max="100" value="88.4">
+                                <input type="number" name="y-position_coordinates" class="percent" id="" step="0.1" min="0"
+                                    max="100" value="88.4">
+                            </div>
+                        </div>
+                        <h6 class="heading">Font Face Selector & Font Sizes.</h6>
+                        <div class="font_face_wrapper mb-3 mt-3">
+                            <div class="font_select">
+                                <label for="messageFont">Message font face & font weight.</label>
+                                <input id="messageFont" type="text" class="font" data-id="frame_message_name">
+                                <div class="font_weight_selector mt-1 mb-1">
+                                    <input type="range" 
+                                           name="frame_message_name_font_size" class="font_track" id="" step="0.1" min="0"
+                                           max="50" value="22">
+                                    <input type="number" name="frame_message_name_font_size" class="percent_number" id="" step="0.1" min="0"
+                                           max="50" value="22">
+                                </div>
+                            </div>
+                            <div class="font_select">
+                                <label for="dateFont">Date font face.</label>
+                                <input id="dateFont" type="text" class="font" data-id="frame_date_time">
+                                <div class="font_weight_selector mt-1 mb-1">
+                                    <input type="range" 
+                                           name="frame_date_time_font_size" class="font_track" id="" step="0.1" min="0"
+                                           max="50" value="12">
+                                    <input type="number" name="frame_date_time_font_size" class="percent_number" id="" step="0.1" min="0"
+                                           max="50" value="12">
+                                </div>
+                            </div>
+                            <div class="font_select">
+                                <label for="addressFont">Address font face.</label>
+                                <input id="addressFont" type="text" class="font" data-id="frame_address">
+                                <div class="font_weight_selector mt-1 mb-1">
+                                    <input type="range" 
+                                           name="frame_address_font_size" class="font_track" id="" step="0.1" min="0"
+                                           max="50" value="12">
+                                    <input type="number" name="frame_address_font_size" class="percent_number" id="" step="0.1" min="0"
+                                           max="50" value="12">
+                                </div>
+                            </div>
+                            <div class="font_select">
+                                <label for="coordinatesFont">Coordinates font face.</label>
+                                <input id="coordinatesFont" type="text" class="font" data-id="frame_coordinate">
+                                <div class="font_weight_selector mt-1 mb-1">
+                                    <input type="range" 
+                                           name="frame_coordinate_font_size" class="font_track" id="" step="0.1" min="0"
+                                           max="50" value="12">
+                                    <input type="number" name="frame_coordinate_font_size" class="percent_number" id="" step="0.1" min="0"
+                                           max="50" value="12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 p-0 m-0 main">
+                <div class="preview" id="preview">
+                    <div class="frame vertical" id="frame">
+                      <div class="frame_inner" id="frame_inner"></div>
+                      <div class="frame_map" id="frame_map">
+                        <div id="map">
+                            <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1417.32 1417.32" xml:space="preserve" height="100%" max-height="100%" width="100%" max-width="100%"><!----><!---->
+                                <path id="heart_path" d="M0,0l0,1418l1418,0l0,-1418l-1418,0Zm1387.3,620.065c-92.1,394.108 -637.327,766.115 -678.709,787.209c-41.266,-21.094 -586.493,-393.101 -678.709,-787.209c-17.982,-77 -40.344,-297.312 44.494,-427.798c10.029,-15.446 53.601,-76.308 134.29,-124.606c115.27,-69.047 332.323,-114.579 499.925,129.448c167.718,-244.142 384.656,-198.495 499.926,-129.448c80.689,48.298 124.261,109.275 134.289,124.606c84.839,130.371 62.477,350.798 44.494,427.798Z"></path>
+                                <path id="heart_border" d="M1387.3,620.065c-92.1,394.108 -637.327,766.115 -678.709,787.209c-41.266,-21.094 -586.493,-393.101 -678.709,-787.209c-17.982,-77 -40.344,-297.312 44.494,-427.798c10.029,-15.446 53.601,-76.308 134.29,-124.606c115.27,-69.047 332.323,-114.579 499.925,129.448c167.718,-244.142 384.656,-198.495 499.926,-129.448c80.689,48.298 124.261,109.275 134.289,124.606c84.839,130.371 62.477,350.798 44.494,427.798Z"></path>
+                            </svg>
+                        </div>
+                      </div>
+                      <div class="frame_message_name" id="frame_message_name">Mudasir Abbas Turi From Lahore.</div>
+                      <div class="frame_date_time" id="frame_date_time">
+                        <span class="frame_date" id="frame_date">20th September 2021</span>
+                        <span class="frame_time" id="frame_time">- 12:00 AM </span>
+                      </div>
+                      <div class="frame_address" id="frame_address">Canotek Rd, Ottawa, ON K1J, Canada</div>
+                      <div class="frame_coordinate" id="frame_coordinate">45.4547° N, 75.584° W</div>
+                    </div>
+                  </div>
+            </div>
+            <div class="fixed-bottom col-4 fixed_button_wrapper">
+                <button type="button" class="convertToImgDownloadBtn" onclick="convertToImgDownload()">
+                    Generate & Download Map.
+                </button>
+            </div>
+            <div class="loader" id="loader">
+                <div class="loader_inner">
+                    <span class="spinner-border text-success"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOLf24aCsK0BZTv4xOeQwSruCFiOQGqsk&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assets/dist/jquery.fontpicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script type="text/javascript" src="../assets/map/d3.min.js"></script>
+    <script type="text/javascript" src="../assets/map/d3.geo.projection.min.js"></script>
+    <script type="text/javascript" src="../assets/map/celestial.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="vanilla-picker.csp.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
