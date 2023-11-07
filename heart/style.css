@@ -1,0 +1,32 @@
+.frame_map {
+    border-radius: 0;
+    top: var(--y-position_map, 20%);
+    background-color: var(--frame_map_color, #061b2800);
+    width: 75%;
+}
+
+
+#map canvas {
+    width: 100%;
+}
+#map svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 1000;
+}
+
+#heart_path {
+    fill: var(--frame_color, #061b28);
+}
+
+#heart_border {
+    fill: none; 
+    fill-rule: nonzero; 
+    stroke: #ffffff; 
+    stroke-width: 6px;
+}
